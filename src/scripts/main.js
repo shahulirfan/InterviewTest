@@ -177,9 +177,10 @@ function mainBgStop() {
 
 
 
-
+window.addEventListener("load",()=>{
 
 mainBgStop()
 pageOneAnime()
 listIntegator()
 buttonClick()
+})

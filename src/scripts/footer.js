@@ -73,7 +73,8 @@ function contectDetails( ) {
     }
         
 }
-
+window.addEventListener("load",()=>{
 company_option()
 
 contectDetails()
+})

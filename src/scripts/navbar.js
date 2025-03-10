@@ -162,6 +162,8 @@ function navbarLinkIntrator() {
 }
 
 
+window.addEventListener("load",()=>{
+
 
 // adds name of the navbar links & there sublink
 navbarLinkIntrator()
@@ -172,3 +174,4 @@ openNavbarBurger()
 // animation for navbar for destop view
 navOption()
 
+})
