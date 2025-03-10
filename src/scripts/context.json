@@ -1,0 +1,124 @@
+
+{
+	"navbar":{
+		"navbarList":{
+			"About DAEIM":{
+				"overview":0,
+				"history":1,
+				"Contact":2,
+				"overseas/Domestic branches":3,
+				"affiliates":4
+			},
+			"Business lines":{
+				"petrochemicals":0,
+				"pi":1,
+				"logistics":2,
+				"tank container":3,
+				"construction Informatization":4,
+				"IT Service":5,
+				"invest":6
+			},
+
+			"Financial Information":{
+				"daelimCo.,Ltd. highlights":0,
+				"Financial Statements":1
+				
+			},
+			"PR Center":{
+				"CI Introduction":0
+				
+			},
+			"ESG":{
+				"ESG Management":0,
+				"human Rights/Environmental Managment":1,
+				"precision Managment":2,
+				"win-Win Manage":3
+				
+			}
+
+		}
+
+
+
+	},
+
+
+	"page2": {
+		"buttonContent": {
+			"Petrochemical": {
+				"text": "We create customer-oriented value with high performance as a petrochemical trading company that produces and sells polyimide products which are high-functional plastic materials and engages in the sale of chemicals and polymers at home and abroad.",
+				"bg": "../asset/bg_sec/mask_visual01.png"
+			},
+
+			"Logitics": {
+				"text": "We offer distinguished Logistics services on the basis of our global networks, delivering value to customers with competitive freight charges and various transportation methods.",
+				"bg": "../asset/bg_sec/mask_visual02.png"
+			},
+
+			"Constuction Information": {
+				"text": "We are the provider of total service from planning to design, construction, and after-sales service for houses, tunnels, roads, harbors, railways, and bridges, as well as increases in the added value of the buildings themselves.",
+				"bg": "../asset/bg_sec/mask_visual03.png"
+			},
+
+			"IT Service": {
+				"text": "We have continued to grow thanks to the integration of IT systems, maintenance, and external SI business. In particular, we provide optimal IT service to customers by utilizing our rich experience in the public sector, technological prowess of integrating information systems in various architectures, and standardized methodology and quality assurance system procedures.",
+				"bg": "../asset/bg_sec/mask_visual04.png"
+			},
+
+			"Buusness Develpment": {
+				"text": "Daelim Co., Ltd is very active in developing and driving new business to serve as a growth engine for the future, which will be built around our current competitive edge in petrochemicals trading and shipping and transportation services.",
+				"bg": "../asset/bg_sec/mask_visual05.png"
+			}
+		}
+	},
+
+
+	"footer":{
+		"companyDetail":{
+			"links":{
+				"Overseas/ Domestic Branches":
+				"We are always on the lookout for global market trends. ",
+				"Customer Inquiries":"We stay attentive to customers inqury.",
+				"Location":"We will give you our location and contact information."
+			}
+
+		},
+
+		"contactDetail":{
+			"About DAELIM":{
+				"Overview":0,
+				"Location":1,
+				"Overseas/Domestic branches":2,
+				"Affiliates":3,
+				"History":4
+			},
+			"Business line":{
+				"Petrochemicals":0,
+				"Logistics":1,
+				"Construction Informatization":2,
+				"IT Service":3,
+				"Business Development":4
+			},
+			"Financial Information":{
+				"Financial Statements":0
+				
+			},
+			"PR Center":{
+				"CI Introduction":0
+				
+			},
+			"Customer Service":{
+				"General Inquiries":0
+				
+			}
+
+
+
+
+		}
+
+	
+
+
+	}
+}

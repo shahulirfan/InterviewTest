@@ -1,0 +1,307 @@
+@import "tailwindcss";
+
+*{
+    font-family: 'NotoSansKR Regular', "?? ??", Helvetica, Apple-Gothic, Dotum, "??", Gulim, "??";
+}
+
+
+@theme{
+    --color-neon:#4bff36;
+
+    --animate-section :navListAnime 1s ease-in-out forwards;
+
+    
+    
+
+
+   
+    @keyframes navListAnime{
+        from{
+            height: 0px;
+    
+        }
+    
+        to{
+            height:15rem;
+        }
+    }
+}
+
+@utility no-scrollbar{
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+   /* Hide scrollbar for IE, Edge and Firefox */
+    & {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+  }
+}
+
+nav > a {
+	width: 100%;
+    
+}
+nav{
+    @apply text-white;
+    
+}
+nav .options a{
+    @apply max-md:pr-10 flex items-center max-md:justify-end justify-center md:h-auto ;  
+}
+nav ul {
+    @apply hidden absolute top-15 xl:top-20 z-2 items-center h-20 flex-col pt-3 gap-2 overflow-x-hidden overflow-y-scroll w-fit no-scrollbar;
+    height: 0px;
+
+
+}
+
+.listAnime{
+   animation: ulAnime 1s ease-in-out forwards;
+}
+
+@keyframes ulAnime{
+    0%{
+        height:0;
+    }
+    100%{
+        height:12rem;
+    }
+}
+
+nav ul li{
+    @apply w-23 xl:w-30 hover:scale-110;
+}
+
+.navLink li{
+    @apply text-xs ;
+}
+
+nav .options{
+    transition-duration: 1s;
+}
+.nav_anime{
+    @apply right-0.5;
+}
+
+.options{
+    @apply flex h-fit w-2/5 py-10 flex-col text-right text-xl max-w-300  gap-2 min-w-56 md:w-full md:flex-row md:size-full md:text-sm md:text-center md:p-1 max-md:absolute max-md:z-1  max-md:right-0 max-md:-top-100  max-md:items-center    max-md:bg-black/25 transition-[top];
+}
+
+.anime_bg{
+    animation: bgAnime 2s ease-in-out forwards;
+}
+
+
+.language_options select{
+    @apply w-3/4  pr-5 rounded-xl text-center appearance-none outline-0 ;
+}
+
+.language_options option{
+    @apply bg-black/55 ;
+}
+
+
+/* main page styleing */
+
+ .page{
+    @apply md:w-370 h-[25rem] md:h-[30rem] xl:h-[50rem] md:mx-auto;
+}
+
+.bg_list div img{
+        @apply size-full object-cover;
+
+
+}
+
+
+
+.bg_list div{
+    @apply absolute h-full w-full;
+}
+
+.bg_list :nth-child(1){
+    @apply right-0;
+}
+
+.bg_list :nth-child(2){
+    @apply right-10 opacity-0;
+    animation: bgAnime 2s forwards ease-in-out;
+
+}
+.bg_list :nth-child(3){
+    @apply opacity-0 ;
+}
+
+
+
+@keyframes bgAnime{
+
+    0%{
+        right: -2.75rem;
+        opacity: 0;
+       
+
+    }
+50%{
+    right: 0;
+}
+    100%{
+        right: 0;
+        opacity: 1;
+        z-index: 1;
+    }
+}
+
+
+
+
+
+
+.icon ul li{
+    @apply w-15 h-1 bg-white/55  ;
+}
+
+.icon ul .active {
+    @apply bg-white animate-[--var(--animate-ul)];
+    
+}
+
+.white{
+    filter: invert(100%) sepia(19%) saturate(7303%) hue-rotate(180deg) brightness(108%) contrast(105%);
+}
+
+.page2_title div{
+    @apply size-fit px-2 py-1;
+}
+
+.page2_options button{
+   @apply text-white md:text-black max-w-60 max-md:w-50 w-full text-lg md:text-sm md:h-10 h-fit bg-transparent border-1;
+}
+
+.page2_comment .active{
+    animation: opacite ease-in-out 2s forwards;
+}
+
+@keyframes opacite{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.page2_options{
+    @apply col-start-2 row-span-2 flex flex-col items-center justify-center gap-3 md:flex-row w-full mt-10 max-md:my-2 ;
+}
+
+.page2_comment{
+    @apply row-start-1 row-span-2 col-span-1 xl:w-3/5 md:text-center bg-transparent max-md:py-2 max-md:overflow-x-hidden max-md:overflow-y-auto;
+}
+
+.page2_cont{
+    @apply md:row-start-4 row-end-5 col-span-2 grid grid-cols-2 grid-rows-2 row-start-2 md:flex md:flex-col z-5 md:justify-center md:items-center md:px-10 px-3 gap-5 bg-transparent;
+}
+
+
+
+.backbg img{
+    @apply object-cover size-full absolute top-0 right-10 opacity-0 bg-transparent;
+}
+
+
+.backbg .active{
+    @apply z-2 right-0;
+    animation: opas 1s ease-in-out forwards;
+}
+
+
+.page2_options .clic{
+    @apply bg-blue-950 text-white;
+    animation: buttonAnime 0.5s ease-in-out forwards;
+}
+
+
+@keyframes opas{
+    from{
+        opacity: 0;
+        right:2.5rem;
+    }
+    to{
+        opacity: 1;
+        right: 0;
+    }
+}
+@keyframes buttonAnime{
+    from{
+        background-color: white;
+        color: black;
+
+    }
+    to{
+        background-color: #162456;
+        color: white;
+    }
+}
+
+/* footer content */
+
+
+.about_view{
+    @apply w-2/8 h-full max-md:w-full max-md:h-4/5 max-md:mt-5 ;
+}
+.about_view section{
+    @apply  md:pr-1 h-1/2 text-right flex items-center ;
+}
+
+.about_view section a{
+    @apply w-full h-fit flex items-center md:flex-col md:items-end xl:pr-3;
+}
+
+.about_view section a div{
+    @apply max-md:w-2/5 max-md:h-fit flex items-end flex-col [&>*]:size-fit [&>*]:mr-2 ;
+}
+
+.about_view section a p{
+    @apply text-xs xl:text-sm max-md:h-full max-md:w-3/5 text-left ml-3 xl:text-right;
+}
+
+.about_company section{
+    @apply md:ml-12 ;
+}
+
+.company_options{
+    @apply flex items-center gap-14 max-md:hidden;
+}
+
+.company_options a{
+    @apply flex flex-col h-2/3 md:max-w-60 md:gap-1 relative before:size-10 before:absolute before:-left-11 md:ml-12  ;
+}
+
+
+
+.company_options a h6{
+    @apply text-lg  xl:text-xl line-clamp-2 leading-6 xl:pt-3;
+}
+
+.company_options a p{
+    @apply text-xs  xl:text-sm line-clamp-3 max-md:hidden;
+}
+
+.contact_detail div{
+    @apply h-full pt-4 mt-5 w-fit max-w-35 px-4  text-white max-md:h-fit max-md:py-2 max-md:my-0 max-md:pl-5 max-md:mx-5  ;
+}
+
+.contact_detail div h2{
+    @apply  flex flex-col md:gap-2 text-lg max-h-20 md:size-fit  md:mb-5 md:pl-2 after:w-5 after:h-0.5 after:bg-amber-200 max-md:after:hidden max-md:text-sm   ; 
+}
+.contact_detail div ul{
+    @apply max-md:hidden md:overflow-y-clip text-sm;
+}
+
+
+.foot_footer section{
+    @apply w-2/3 h-1/2 ;
+}
